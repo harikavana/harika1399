@@ -1,0 +1,46 @@
+java
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class StudentManagement {
+    static ArrayList<String> students = new ArrayList<>();
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int choice;
+
+        do {
+            System.out.println("\nStudent Management System");
+            System.out.println("1. Add Student");
+            System.out.println("2. View Students");
+            System.out.println("3. Exit");
+            System.out.print("Enter your choice: ");
+            choice = scanner.nextInt();
+            scanner.nextLine();
+
+            switch (choice) {
+                case 1:
+                    System.out.print("Enter student name: ");
+                    String name = scanner.nextLine();
+                    students.add(name);
+                    System.out.println("Student added successfully.");
+                    break;
+                case 2:
+                    System.out.println("\nStudent List:");
+                    for (String student : students) {
+                        System.out.println("- " + student);
+                    }
+                    break;
+                case 3:
+                    System.out.println("Exiting...");
+                    break;
+                default:
+                    System.out.println("Invalid choice. Try again.");
+            }
+        } while (choice != 3);
+
+        scanner.close();
+    }
+}
+
+
