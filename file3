@@ -10,17 +10,3 @@ class Student {
         return id + ": " + name;
     }
 }
-Menu Input Validation:
-Prevent program from crashing on non-numeric input using try-catch:
-
-
-
-
-
-
-
-
-
-
-Ask ChatGPT
-
