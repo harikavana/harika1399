@@ -17,8 +17,6 @@ public class StudentManagement {
             System.out.print("Enter your choice: ");
             choice = scanner.nextInt();
             scanner.nextLine();
-
-            switch (choice) {
                 case 1:
                     System.out.print("Enter student name: ");
                     String name = scanner.nextLine();
